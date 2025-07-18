@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce Cart System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍️ My Store</h1>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <div id="product-grid" class="product-grid"></div>
+  </main>
+
+  <aside id="cart" class="cart hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      Total: ₹<span id="cart-total">0</span>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
